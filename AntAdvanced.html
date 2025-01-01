@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Ants Advanced </title>
+        	<link rel = 'stylesheet' href = 'style.css'>
+	</head>
+	<body>
+		<header>
+			<section> <a href = 'AntBasics.html' > Back to Basics </a> </section>
+			<section> <h1>All about ants </h1> </section>
+			<section> <a href = 'AntCitations.html' > Citations </a> </section>
+		</header>
+		<nav>
+			<a href = '#Mimicry' > Ant Mimicry </a>
+			<a href = '#ACO' > Ant Colony Optimization </a>
+		</nav>
+		<section id = 'Mimicry' >
+			<img src='Images/AntSpider.jpeg' alt='A spider species that looks like an ant'>
+			<article>
+				<h2> Ant Mimicry </h2>
+                        <p> Some organisms can mimic the appearance of an ant. This can be due to a lack or defense, having access to resources, or to attract prey. </p>
+				<ul>
+                              <li>
+                                    <h3> Organisms </h3>
+                                    <ol>
+                                          <li>
+                                                Castianeira longipalpa is a spider species that looks like an ant. It mimics to deter predators.
+                                          </li>
+                                          <li>
+                                                Passiflora is a genus of about 550 plant species. The tips of the pistils have dark spots that resemble ants to deter predators.
+                                          </li>
+                                          <li>
+                                                Myrmecophilus acervorum is a cricket species that doesn't look like an ant, but mimics their movements and pheromones. They do this to gain tolerance to the ant species and live with them, getting protection.
+                                          </li>
+                                          <li>
+                                                Zodariidae is a spider family that mimics ants. They do this so they can get close without triggering them, and hunts them for food.
+                                          </li>
+                                    </ol>
+                              </li>
+                        </ul>
+                        <p>Ant mimicry illuminates the intricate dynamics within ecosystems, showcasing the diverse strategies organisms employ to thrive. From avoiding predators to infiltrating ant colonies for sustenance, the mimicry of ants underscores the complexity of ecological interactions and the evolutionary arms race shaping life on Earth.</p>
+			</article>
+		</section>
+		<section id = 'ACO' >
+			<img src='Images/ACO.png' alt='Ants taking the shorter path over the longer path'>
+			<article>
+				<h2> Ant Colony Optimization </h2>
+				<ul>
+					<li>
+						<h3> What it is </h3>
+							<p> Ant Colony Optimization, or ACO, is an algorithm to find an approximate best path</p>
+					</li>
+					<li>
+						<h3> How it's used </h3>
+						<p> Say you are a traveler. There are many cities scattered around an area. You have to navigate through all of them but wonder which order to go to walk the shortest distance. Instead of counting all of the possible variations (which would take a long time especially with a lot of cities), you could use ACO to help with this </p>
+					</li>
+					<li>
+						<h3> Algorithm </h3>
+						<ol>
+							<li>
+								Release many agents from a starting point
+							</li>
+							<li>
+								Each agent walks in random directions and drop a "home" pheromone wherever they go
+							</li>
+							<li>
+								When an agent by chance runs into a destination, it starts to follow the "home" pheromone while also releasing a "destination" pheromone until it gets home
+							</li>
+							<li>
+								agents from home then go to the destination and agents from the destination go home
+							</li>
+							<li>
+								agents follow the strongest pheromone path of the pheromone type they are following
+							</li>
+						</ol>
+					</li>
+					<p> The reason the shortest path is found is because there is a feedback loop of ants following a path and releasing pheromones. Say there is a longer path: the agents will take more time to find the destination and there will already be "home" pheromones from other agents that found a shorter path. </p>
+					<p> The reason we call this algorithm "Ant Colony Optimization" is because we took inspiration from (you guessed it) Ants. This is how they find food very quickly and efficiently and why they tend to look like they group up in trails. </p>
+				</ul>
+			</article>
+		</section>
+		<footer>
+			Sam Vlasenko
+		</footer>
+	</body>
+</html>
